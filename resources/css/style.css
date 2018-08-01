@@ -311,7 +311,7 @@ main {
 }
 
 .news-text {
-  width: 65%;
+  width:
   padding-right: 1.5rem;
 }
 
@@ -403,6 +403,10 @@ main {
 }
 
 /* courses */
+.heading {
+  padding: 2rem 1.5rem 0 1.5rem;
+  text-transform: uppercase;
+}
 /* courses-mobile */
 
 /* thesis */
@@ -411,6 +415,10 @@ main {
   padding: 2rem 1.5rem 0 1.5rem;
   background-color: #b0c4de;
   text-transform: uppercase;
+}
+
+.featured-two {
+  background-color: #b0c4de;
 }
 
 .featured-image {
@@ -423,6 +431,11 @@ main {
 
 video {
   width: 100%;
+}
+
+.news-image {
+  width: 35%;
+  padding: 16px;
 }
 
 .featured-text .banner-header {
