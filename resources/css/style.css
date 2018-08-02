@@ -259,13 +259,6 @@ main {
   padding-top: 1.5rem
 }
 
-.banner-header {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 1rem;
-}
-
 .featured h3 {
   text-align: right;
 }
@@ -407,6 +400,56 @@ main {
   padding: 2rem 1.5rem 0 1.5rem;
   text-transform: uppercase;
 }
+
+.header .banner-header {
+  padding-bottom: 0;
+}
+
+.courses {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.course-box {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  margin: 0.5rem 1rem;
+}
+
+.courses-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+a.courses-image {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+img.course-image {
+  border-radius: 1rem 1rem 0 0;
+}
+
+a .banner-header {
+  text-align: left;
+  font-size: 1.25rem;
+  padding: 16px;
+}
+
+a .banner-text {
+  text-align: left;
+  font-size: 1rem;
+  padding: 8px;
+}
+
 /* courses-mobile */
 
 /* thesis */
