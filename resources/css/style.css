@@ -304,7 +304,7 @@ main {
 }
 
 .news-text {
-  width:
+  width: 65%;
   padding-right: 1.5rem;
 }
 
@@ -419,6 +419,7 @@ main {
 
 .course {
   margin: 0.5rem 1rem;
+  width: 30%;
 }
 
 .courses-image {
@@ -427,6 +428,8 @@ main {
   justify-content: center;
   height: auto;
   padding-bottom: 1.5rem;
+  height: auto;
+  width: 100%;
 }
 
 a.courses-image {
@@ -452,7 +455,47 @@ a .banner-text {
 
 /* courses-mobile */
 
+@media only screen and (max-width: 760px) {
+  .heading {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .courses {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .course-box {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .course {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .course-image {
+    display: none;
+  }
+}
+
 /* thesis */
+
+.featured-column-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 2rem 1.5rem;
+}
 
 .thesis {
   padding: 2rem 1.5rem 0 1.5rem;
@@ -474,11 +517,6 @@ a .banner-text {
 
 video {
   width: 100%;
-}
-
-.news-image {
-  width: 35%;
-  padding: 16px;
 }
 
 .featured-text .banner-header {
