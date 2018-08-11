@@ -1,3 +1,5 @@
+/* multiple */
+
 html {
   font-size: 16px;
   width: 100%;
@@ -81,12 +83,6 @@ header img {
 /* header-mobile */
 
 @media only screen and (max-width: 760px) {
-  .desktop {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 760px) {
   .navigation {
     width: 100%;
   }
@@ -113,7 +109,7 @@ header img {
 }
 
 @media only screen and (min-width:761px) {
-  .fa, .link img {
+  .fa,  .courses {
     display: none;
   }
 }
@@ -159,7 +155,7 @@ main {
 }
 
 .banner-text {
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
@@ -403,36 +399,27 @@ main {
   padding-bottom: 0;
 }
 
-.courses {
-  width: 100%;
-  justify-content: space-between;
-}
-
 .course-box {
-  padding: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem 4.5rem;
 }
 
 .course {
-  margin: 0.5rem 1rem;
-  width: 20rem;
+  width: 100%;
 }
 
 .courses-image {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: auto;
   padding-bottom: 1.5rem;
-  height: auto;
-  width: 100%;
+  width: auto;
+  height:40vh;
 }
 
 .course-image {
-  width: 100;
+  width: 100%;
   height: auto;
 }
 
@@ -456,6 +443,10 @@ a .banner-text {
   padding: 8px;
 }
 
+.item {
+  margin:
+}
+
 /* courses-mobile */
 
 @media only screen and (max-width: 760px) {
@@ -467,25 +458,38 @@ a .banner-text {
 @media only screen and (max-width: 760px) {
   .courses {
     width: 100%;
-    justify-content: space-between;
   }
 }
 
 @media only screen and (max-width: 760px) {
   .course-box {
+    display: flex;
     flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  .course {
-    width: 100%;
   }
 }
 
 @media only screen and (max-width: 760px) {
   .course-image {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .courses-image {
+    height: auto;
+    margin: 8px;
+  }
+}
+
+@media only screen and (max-width:760px) {
+  a .banner-header {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width:1350px){
+  .courses-image{
+    height: 50vh;
   }
 }
 
@@ -566,3 +570,9 @@ footer {
   padding-right: 1.5rem;
 }
 /* footer-mobile */
+
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+}
