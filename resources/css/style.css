@@ -17,7 +17,7 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 64px;
+  height: 4rem;
   background-color: white;
   align-items: center;
 }
@@ -34,13 +34,13 @@ header {
   display: flex;
   font-size: 2rem;
   flex: 1;
-  padding-left: 24px;
+  padding-left: 1.5rem;
   align-items: center;
   justify-content: flex-start;
 }
 
 header img {
-  width: 32px;
+  width: 2rem;
 }
 
 .colmar {
@@ -54,7 +54,7 @@ header img {
 }
 
 .navigation {
-  padding-right: 24px;
+  padding-right: 1.5rem;
 }
 
 .nav-box {
@@ -69,9 +69,13 @@ header img {
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  padding-left: 16px;
+  padding-left: 1rem;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.nav-text {
+  padding-left: 1rem;
 }
 
 /* header-mobile */
@@ -155,9 +159,9 @@ main {
 }
 
 .banner-text {
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 .start {
@@ -206,6 +210,7 @@ main {
 @media only screen and (max-width:760px) {
   .banner-header {
     padding: 2rem 1rem;
+    text-align: center;
   }
 }
 
@@ -388,13 +393,6 @@ main {
   }
 }
 
-.course-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1.5rem 3rem;
-}
-
 /* courses */
 .heading {
   padding: 2rem 1.5rem 0 1.5rem;
@@ -415,11 +413,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .course {
   margin: 0.5rem 1rem;
-  width: 30%;
+  width: 20rem;
 }
 
 .courses-image {
@@ -432,6 +431,11 @@ main {
   width: 100%;
 }
 
+.course-image {
+  width: 100;
+  height: auto;
+}
+
 a.courses-image {
   background-color: #fff;
   border-radius: 1rem;
@@ -442,7 +446,6 @@ img.course-image {
 }
 
 a .banner-header {
-  text-align: left;
   font-size: 1.25rem;
   padding: 16px;
 }
@@ -534,12 +537,6 @@ video {
   }
 }
 
-@media only screen and (max-width: 760px) {
-  .featured-column.two {
-    padding: 0 0 1.5rem 0;
-    width: 100%;
-  }
-}
 
 @media only screen and (max-width: 760px) {
   .featured-image {
